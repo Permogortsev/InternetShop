@@ -1,0 +1,32 @@
+@media (max-width: 782px) {
+    .grand__offer .grand__offer-features {
+        position: static;
+        width: auto;
+    }
+
+    .title__textTop {
+        font-size: 45px;
+
+
+    }
+
+    .title__textBottom {
+        font-size: 35px;
+    }
+
+}
+
+
+@media (max-width: 620px) {
+
+    .title__textTop {
+        font-size: 35px;
+
+
+    }
+
+    .title__textBottom {
+        font-size: 25px;
+    }
+
+}
