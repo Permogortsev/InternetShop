@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <!-- favicon >>> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo.svg">
+    <link rel="manifest" href="assets/images/logo.svg">
+    <link rel="mask-icon" href="assets/images/logo.svg" color="#f16d7f">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- <<< favicon -->
+</head>
+
+<body>
+    <svg style="display: none;">
+        <symbol id="close" viewBox="0 0 311 311.07733">
+        <g>
+            <path d="m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0"/>
+            <path d="m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0"/>
+        </g>
+    </symbol>
+    </svg>
+    
+    <header class="header center">
+
+        <div class="header__left">
+            <a class="header__logo" href="index.html">
+                <img src="assets/images/logo.svg" alt="logo">
+            </a>
+
+            <img class="header__search" src="assets/images/search.svg" alt="search">
+        </div>
+        <div class="header__right">
+            <img class="header__icons" src="assets/images/menu.svg" alt="menu">
+            <img class="header__icons" src="assets/images/account.svg" alt="account">
+            <img class="header__icons" src="assets/images/cart.svg" alt="cart">
+        </div>
+
+
+    </header>
+    <main class="main main_content">
+        <div class="page__title center">
+            <div class="page__title_content">
+                shopping cart
+            </div>
+        </div>
+        <div class="cart__wrapper container">
+            <div class="cart__items">
+
+                <div class="cart__item">
+                    <img src="assets/images/cart_item-1.jpg" alt="cart_item-1">
+                    <div class="cart__item_parameters">
+                        <div class="parameters__title">
+                            mango people <br> t-shirt
+                        </div>
+                        <div class="parameters__price ">
+                            Price: <span>$300</span>
+                        </div>
+                        <div class="parameters__color parameters-mt6px">
+                            Color: Red
+                        </div>
+                        <div class="parameters__size parameters-mt6px">
+                            Size: Xl
+                        </div>
+                        <div class="parameters__quantity parameters-mt6px">
+                            Quantity: <input type="number" min="0" placeholder="0">
+                        </div>
+
+                    </div>
+                    <a class="cart__item_close" href="#">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </a>
+
+                </div>
+
+                <div class="cart__item">
+                    <img src="assets/images/cart_item-2.jpg" alt="cart_item-1">
+                    <div class="cart__item_parameters">
+                        <div class="parameters__title">
+                            mango people <br> t-shirt
+                        </div>
+                        <div class="parameters__price ">
+                            Price: <span>$300</span>
+                        </div>
+                        <div class="parameters__color parameters-mt6px">
+                            Color: Red
+                        </div>
+                        <div class="parameters__size parameters-mt6px">
+                            Size: Xl
+                        </div>
+                        <div class="parameters__quantity parameters-mt6px">
+                            Quantity: <input type="number" min="0" placeholder="0">
+                        </div>
+
+                    </div>
+                    <a class="cart__item_close" href="#">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </a>
+
+                </div>
+
+                <div class="cart__items_buttons">
+                    <a class="cart__items_button" href="#" role="button">
+                        CLEAR SHOPPING CART
+                    </a>
+                    <a class="cart__items_button" href="#" role="button">
+                        CONTINUE SHOPPING
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="cart__form">
+                <form class="cart__form_addres">
+                    SHIPPING ADRESS
+                    <input class="input__add_info country" type="text" placeholder="Bangladesh">
+                    <input class="input__add_info state" type="text" placeholder="State">
+                    <input class="input__add_info postcode" type="text" placeholder="Postcode / Zip">
+                    <a class="button_getQuote" href="#" role="button">
+                        GET A QUOTE
+                    </a>
+                
+                </form>
+
+                <div class="cart__form_total">
+                    <div class="sub__total">
+                        SUB TOTAL<span>$900</span>
+                    </div>
+                    <div class="grand__total">
+                        GRAND TOTAL<span>$900</span>
+                    </div>
+                    <div class="line">
+
+                    </div>
+                    <a class="total_button" href="#" role="button">
+                        PROCEED TO CHECKOUT
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="footer">
+
+    </footer>
+</body>
+
+</html>
