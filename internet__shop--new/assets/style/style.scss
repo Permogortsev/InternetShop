@@ -117,7 +117,7 @@ input:focus:-ms-input-placeholder {
 
 .header {
     background: #222222;
-    height: 75px;
+    min-height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -822,7 +822,7 @@ border: 1px solid $red;
 
 .new_arrivals{
     width: 100%;
-    height: 150px;
+    min-height: 150px;
     background-color: #F8F3F4;
     display: flex;
     align-items: center;
@@ -965,7 +965,7 @@ height: auto;
 
 .filters{
     display: flex;
-    // margin: 51px 0 64px;
+    margin: 51px 0 64px;
 }
 
 .filter_burger{
@@ -994,7 +994,46 @@ height: auto;
     flex-wrap: wrap;
 }
 
+.change__pageCatalog_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.change__pageCatalog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C4C4C4;
+    padding: 15px;
+    max-width: 285px;
+
+}
+
+.change__pageCatalog a{
+    display: block;
+}
+
+.change__pageCatalog_arrow svg{
+    width: 8px;
+    height: 14px;
+    margin: 0 8px;
+}
+
+.page_number{
+    color: #C4C4C4;
+    padding: 0 6px;
+}
+.page_number:hover{
+    color: $red;
+}
 
 
+.change__pageCatalog_arrow:hover{
+    & svg{
+        fill: $red;
+    }
+}
 @import 'media';
 

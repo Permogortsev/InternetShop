@@ -96,7 +96,7 @@ input:focus:-ms-input-placeholder {
 /* IE 10+ */
 .header {
   background: #222222;
-  height: 75px;
+  min-height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,7 +891,7 @@ input:focus:-ms-input-placeholder {
 
 .new_arrivals {
   width: 100%;
-  height: 150px;
+  min-height: 150px;
   background-color: #F8F3F4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1063,6 +1063,7 @@ input:focus:-ms-input-placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 51px 0 64px;
 }
 
 .filter_burger {
@@ -1101,8 +1102,55 @@ input:focus:-ms-input-placeholder {
       flex-wrap: wrap;
 }
 
-.test {
-  height: 1900px;
+.change__pageCatalog_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 48px;
+}
+
+.change__pageCatalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #C4C4C4;
+  padding: 15px;
+  max-width: 285px;
+}
+
+.change__pageCatalog a {
+  display: block;
+}
+
+.change__pageCatalog_arrow svg {
+  width: 8px;
+  height: 14px;
+  margin: 0 8px;
+}
+
+.page_number {
+  color: #C4C4C4;
+  padding: 0 6px;
+}
+
+.page_number:hover {
+  color: #f16d7f;
+}
+
+.change__pageCatalog_arrow:hover svg {
+  fill: #f16d7f;
 }
 
 @media (max-width: 782px) {
