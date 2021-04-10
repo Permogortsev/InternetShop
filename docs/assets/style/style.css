@@ -1016,6 +1016,7 @@ input:focus:-ms-input-placeholder {
       -ms-flex-align: center;
           align-items: center;
   gap: 23px;
+  margin-left: 30%;
 }
 
 .select__choose {
