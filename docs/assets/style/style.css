@@ -396,70 +396,22 @@ input:focus:-ms-input-placeholder {
   color: #f16d7f;
 }
 
-.grand__offer {
-  position: relative;
-}
-
-.grand__offer .grand__offer-features {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 529px;
-  width: 373px;
-}
-
-.grand__offer-img {
-  display: block;
-  position: relative;
-}
-
-.grand__offer-img img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.grand__offer-img-title {
-  color: #FBFBFB;
-  position: absolute;
-  top: 120px;
-  left: 40px;
-  text-transform: uppercase;
-}
-
-.title__textTop {
-  font-size: 50px;
-}
-
-.title__textTop span {
-  color: #F16D7F;
-}
-
-.title__textBottom {
-  font-size: 35px;
-}
-
-.grand__offer-features {
+.grand__features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #222224;
-  max-width: 100%;
-  height: auto;
+  min-height: 341px;
 }
 
-.features_item:nth-child(n+2) {
-  margin-top: 48px;
+.grand__features-margintop128px {
+  margin-top: 128px;
 }
 
-.features_item_wrap {
+.features_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,6 +425,7 @@ input:focus:-ms-input-placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 48px;
 }
 
 .features_item_title {
@@ -485,7 +438,40 @@ input:focus:-ms-input-placeholder {
   color: #FBFBFB;
   font-size: 14px;
   text-align: center;
+  max-width: 340px;
   margin-top: 16px;
+}
+
+.features_item_svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 40px;
+}
+
+.features_item_svg-car svg {
+  width: 45px;
+  height: 32px;
+  fill: #f16d7f;
+}
+
+.features_item_svg-percent svg {
+  width: 40px;
+  height: 40px;
+  fill: #f16d7f;
+}
+
+.features_item_svg-crown svg {
+  width: 47px;
+  height: 35px;
+  fill: #f16d7f;
 }
 
 .feedback {
@@ -494,7 +480,7 @@ input:focus:-ms-input-placeholder {
   background-position: 0px;
   background-size: cover;
   background-color: rgba(244, 244, 244, 0.7);
-  min-height: 400px;
+  min-height: 448px;
 }
 
 .feedback__wrap {
@@ -512,6 +498,14 @@ input:focus:-ms-input-placeholder {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.feedback-margintop128px {
+  margin-top: 128px;
+}
+
+.feedback-margintop96px {
+  margin-top: 96px;
 }
 
 .subscribe__title {
@@ -1113,7 +1107,7 @@ input:focus:-ms-input-placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 48px;
+  margin: 48px 0 96px;
 }
 
 .change__pageCatalog {
@@ -1152,6 +1146,58 @@ input:focus:-ms-input-placeholder {
 
 .change__pageCatalog_arrow:hover svg {
   fill: #f16d7f;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #222224;
+  min-height: 80px;
+}
+
+.footer__copyright {
+  color: #ffffff;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+}
+
+.footer__social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+.footer__social a svg {
+  width: 15px;
+  height: 15px;
+}
+
+.footer__social a:hover {
+  background-color: #f16d7f;
+}
+
+.footer__social a:hover svg {
+  fill: #ffffff;
 }
 
 @media (max-width: 782px) {
