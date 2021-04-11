@@ -3,6 +3,7 @@
 
 html {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -463,7 +464,7 @@ input:focus:-ms-input-placeholder {
 
 }
 
-.grand__features-margintop128px {
+.feedback-margintop128px {
     margin-top: 128px;
 }
 
@@ -541,6 +542,10 @@ input:focus:-ms-input-placeholder {
 
 .feedback-margintop96px {
     margin-top: 96px;
+}
+
+.subscribe{
+    width: 350px;
 }
 
 .subscribe__title {
@@ -784,6 +789,7 @@ input:focus:-ms-input-placeholder {
     text-transform: uppercase;
     font-size: 24px;
     margin-bottom: 42px;
+    width: 200px;
 
 }
 
@@ -1190,5 +1196,15 @@ input:focus:-ms-input-placeholder {
         fill: $white;
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 @import 'media';
