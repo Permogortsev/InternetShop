@@ -1,22 +1,33 @@
-@media (max-width: 782px) {
-  .grand__offer .grand__offer-features {
-    position: static;
-    width: auto;
+@media (max-width: 1140px) {
+  .registration__info_title {
+    font-size: 16px;
+    margin-left: 22px;
   }
-  .title__textTop {
-    font-size: 45px;
+  .registration__info_subtitle {
+    font-size: 16px;
+    margin-left: 22px;
   }
-  .title__textBottom {
-    font-size: 35px;
+  .registration__info_feature {
+    font-size: 16px;
+    margin-left: 22px;
   }
 }
 
-@media (max-width: 620px) {
-  .title__textTop {
-    font-size: 35px;
+@media (max-width: 675px) {
+  .registration__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .title__textBottom {
-    font-size: 25px;
+  .registration__info {
+    margin-top: 40px;
+  }
+  .registration__form {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=media.css.map */

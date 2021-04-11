@@ -112,6 +112,23 @@ input:focus:-ms-input-placeholder {
   display: inline-block;
 }
 
+.header__search {
+  width: 26px;
+  height: 26px;
+}
+
+.header__search svg {
+  width: 26px;
+  height: 26px;
+  fill: #E8E8E8;
+  -webkit-transition: fill .1s linear;
+  transition: fill .1s linear;
+}
+
+.header__search:hover svg {
+  fill: #f16d7f;
+}
+
 .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,6 +138,55 @@ input:focus:-ms-input-placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__icons svg {
+  fill: #E8E8E8;
+}
+
+.header__icons-burger_menu {
+  width: 32px;
+  height: 23px;
+  -webkit-transition: fill .1s linear;
+  transition: fill .1s linear;
+}
+
+.header__icons-cart {
+  width: 32px;
+  height: 29px;
+  -webkit-transition: fill .1s linear;
+  transition: fill .1s linear;
+}
+
+.header__icons-account {
+  width: 29px;
+  height: 29px;
+  -webkit-transition: fill .1s linear;
+  transition: fill .1s linear;
+}
+
+.header__icons:hover .header__icons-burger_menu {
+  fill: #f16d7f;
+}
+
+.header__icons:hover .header__icons-account {
+  fill: #f16d7f;
+}
+
+.header__icons:hover .header__icons-cart {
+  fill: #f16d7f;
 }
 
 .header__search {
@@ -284,6 +350,10 @@ input:focus:-ms-input-placeholder {
   width: 360px;
   height: 580px;
   background-color: #F8F8F8;
+  -webkit-transition: -webkit-box-shadow .1s linear;
+  transition: -webkit-box-shadow .1s linear;
+  transition: box-shadow .1s linear;
+  transition: box-shadow .1s linear, -webkit-box-shadow .1s linear;
 }
 
 .card__img {
@@ -389,6 +459,8 @@ input:focus:-ms-input-placeholder {
   padding: 15px 40px;
   color: #ffffff;
   border: 1px solid #f16d7f;
+  -webkit-transition: background-color .1s linear;
+  transition: background-color .1s linear;
 }
 
 .fetured_items_button_wrap:hover {
@@ -425,7 +497,6 @@ input:focus:-ms-input-placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 48px;
 }
 
 .features_item_title {
@@ -537,7 +608,10 @@ input:focus:-ms-input-placeholder {
   padding: 16px;
   margin: -7px;
   color: white;
+  cursor: pointer;
   outline: none;
+  -webkit-transition: background-color .1s linear;
+  transition: background-color .1s linear;
 }
 
 .subscribe__button:hover {
@@ -634,6 +708,8 @@ input:focus:-ms-input-placeholder {
   margin-top: 40px;
   max-width: 167px;
   cursor: pointer;
+  -webkit-transition: background-color .1s linear;
+  transition: background-color .1s linear;
 }
 
 .registration__form_button_value {
@@ -722,10 +798,10 @@ input:focus:-ms-input-placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: -webkit-transform .2s , -webkit-box-shadow .2s linear;
-  transition: -webkit-transform .2s , -webkit-box-shadow .2s linear;
-  transition: transform .2s , box-shadow .2s linear;
-  transition: transform .2s , box-shadow .2s linear , -webkit-transform .2s , -webkit-box-shadow .2s linear;
+  -webkit-transition: -webkit-transform .2s, -webkit-box-shadow .2s linear;
+  transition: -webkit-transform .2s, -webkit-box-shadow .2s linear;
+  transition: transform .2s, box-shadow .2s linear;
+  transition: transform .2s, box-shadow .2s linear, -webkit-transform .2s, -webkit-box-shadow .2s linear;
 }
 
 .cart__item:not(:first-child, :last-child) {
@@ -803,6 +879,8 @@ input:focus:-ms-input-placeholder {
   color: #222222;
   border: 1px solid #A4A4A4;
   padding: 17px 40px;
+  -webkit-transition: background-color .1s linear;
+  transition: background-color .1s linear;
 }
 
 .cart__items_button:hover {
@@ -832,6 +910,8 @@ input:focus:-ms-input-placeholder {
   border: 1px solid #A4A4A4;
   max-width: 104px;
   font-size: 11px;
+  -webkit-transition: background-color .1s linear;
+  transition: background-color .1s linear;
 }
 
 .button_getQuote:hover {
@@ -876,6 +956,8 @@ input:focus:-ms-input-placeholder {
   color: #ffffff;
   padding: 15px 42px;
   border: 1px solid #f16d7f;
+  -webkit-transition: background-color .1s linear;
+  transition: background-color .1s linear;
 }
 
 .total_button:hover {
@@ -902,6 +984,8 @@ input:focus:-ms-input-placeholder {
   display: inline-block;
   color: #636363;
   font-size: 14px;
+  -webkit-transition: color .1s linear;
+  transition: color .1s linear;
 }
 
 .product__nav a:hover {
@@ -1036,6 +1120,8 @@ input:focus:-ms-input-placeholder {
   border: 1px solid #f16d7f;
   padding: 12px 26px;
   margin-top: 48px;
+  -webkit-transition: background-color .1s linear;
+  transition: background-color .1s linear;
 }
 
 .product__choose_button svg {
@@ -1043,6 +1129,8 @@ input:focus:-ms-input-placeholder {
   height: 24px;
   margin-right: 23px;
   fill: #f16d7f;
+  -webkit-transition: fill .1s linear;
+  transition: fill .1s linear;
 }
 
 .product__choose_button:hover {
@@ -1138,10 +1226,17 @@ input:focus:-ms-input-placeholder {
 .page_number {
   color: #C4C4C4;
   padding: 0 6px;
+  -webkit-transition: color .1s linear;
+  transition: color .1s linear;
 }
 
 .page_number:hover {
   color: #f16d7f;
+}
+
+.change__pageCatalog_arrow {
+  -webkit-transition: fill .1s linear;
+  transition: fill .1s linear;
 }
 
 .change__pageCatalog_arrow:hover svg {
@@ -1185,11 +1280,15 @@ input:focus:-ms-input-placeholder {
           align-items: center;
   padding: 8px;
   background-color: #ffffff;
+  -webkit-transition: background-color .1s linear;
+  transition: background-color .1s linear;
 }
 
 .footer__social a svg {
   width: 15px;
   height: 15px;
+  -webkit-transition: fill .1s linear;
+  transition: fill .1s linear;
 }
 
 .footer__social a:hover {
@@ -1200,25 +1299,36 @@ input:focus:-ms-input-placeholder {
   fill: #ffffff;
 }
 
-@media (max-width: 782px) {
-  .grand__offer .grand__offer-features {
-    position: static;
-    width: auto;
+@media (max-width: 1140px) {
+  .registration__info_title {
+    font-size: 16px;
+    margin-left: 22px;
   }
-  .title__textTop {
-    font-size: 45px;
+  .registration__info_subtitle {
+    font-size: 16px;
+    margin-left: 22px;
   }
-  .title__textBottom {
-    font-size: 35px;
+  .registration__info_feature {
+    font-size: 16px;
+    margin-left: 22px;
   }
 }
 
-@media (max-width: 620px) {
-  .title__textTop {
-    font-size: 35px;
+@media (max-width: 675px) {
+  .registration__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .title__textBottom {
-    font-size: 25px;
+  .registration__info {
+    margin-top: 40px;
+  }
+  .registration__form {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
