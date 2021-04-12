@@ -124,6 +124,98 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .product__info {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 435px) {
+  .choose__color {
+    font-size: 12px;
+  }
+  .choose__size {
+    font-size: 12px;
+  }
+  .choose__quantity {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1172px) {
+  .main-padding {
+    padding: 0 16px;
+  }
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 796px) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+  }
+  .main-padding {
+    padding: 0 8px;
+  }
+  .choose_parameters {
+    margin-left: 0;
+  }
+  .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 405px) {
+  .main-padding {
+    padding: 0 8px;
+  }
+  .card {
+    width: 350px;
+  }
+  .card__img img {
+    width: inherit;
+  }
+  .card__img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 510px) {
+  .filter_burger span {
+    display: none;
+  }
+  .filter_burger a svg {
+    width: 37px;
+    height: 25px;
+  }
+  .choose_parameters select {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  .page__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 1172px) {
   .registration__content {
     padding: 0 16px;
@@ -187,10 +279,24 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .new_arrivals {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product__nav-margintop {
+    margin-top: 32px;
   }
 }
 

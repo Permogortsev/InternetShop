@@ -136,6 +136,97 @@
     }
 }
 
+//product Page
+// >>>>>>>>>>
+@media (max-width: 1000px){
+    .product__info {
+        margin-top: 0;
+    }
+}
+@media (max-width: 435px) {
+    .choose__color{
+        font-size: 12px;
+    }
+    .choose__size{
+        font-size: 12px;
+    }
+    .choose__quantity{
+        font-size: 12px;
+    }
+}
+
+
+//catalog Page
+//>>>>>>>>>>>>
+
+@media (max-width: 1172px) {
+    .main-padding{
+        padding: 0 16px;
+    }
+    .cards{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 796px){
+    .cards{
+        justify-content: center;
+        gap: 15px;
+    }
+    .main-padding{
+        padding: 0 8px;
+    }
+    .choose_parameters{
+        margin-left: 0;
+    }
+    .filters{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 405px) {
+    .main-padding{
+        padding: 0 8px;
+    }
+    .card{
+        width: 350px;
+    }
+    .card__img img{
+        width: inherit;
+    }
+    .card__img{
+        width: 350px;
+    }
+
+
+
+}
+
+@media (max-width: 510px){
+    .filter_burger span{
+        display: none;
+    }
+    .filter_burger a svg{
+        width: 37px;
+        height: 25px;
+    }
+
+    .choose_parameters select{
+        font-size: 12px
+    }
+    
+}
+
+@media (max-width: 440px){
+    .page__title{
+        display: flex;
+
+        flex-direction: column;
+    }
+}
+
 
 
 // registration Page >>>>
@@ -206,10 +297,20 @@
         padding: 0 8px;
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        
     }
 }
 
+@media (max-width: 440px){
+    .new_arrivals{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .product__nav-margintop{
+        margin-top: 32px;
+    }
+}
 
 //grand__features
 //>>>>>>>
