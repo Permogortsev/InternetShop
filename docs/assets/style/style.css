@@ -1010,6 +1010,24 @@ input:focus:-ms-input-placeholder {
   font-size: 14px;
 }
 
+.product__slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: auto;
+}
+
 .product__slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1018,14 +1036,69 @@ input:focus:-ms-input-placeholder {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #F7F7F7;
+  position: relative;
+  height: 800px;
 }
 
-.slider_photo {
-  max-width: 777px;
+.slider_photos {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
 }
 
-.slider_photo img {
+.slider_item {
   width: 100%;
+  z-index: 1;
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 47px;
+  height: 47px;
+  background-color: #a4a4a454;
+}
+
+.slider__button-left {
+  left: 0;
+  cursor: pointer;
+  padding-right: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slider__button-right {
+  right: 0;
+  cursor: pointer;
+  padding-left: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slider__button svg {
+  width: 12px;
+  height: 21px;
+  -webkit-transition: fill .1s linear;
+  transition: fill .1s linear;
+}
+
+.slider__button:hover svg {
+  fill: #f16d7f;
 }
 
 .product__wrapper {
@@ -1755,5 +1828,4 @@ input:focus:-ms-input-placeholder {
     padding-left: 0;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

@@ -100,6 +100,7 @@ input:focus::-webkit-input-placeholder {
 
 input:focus:-moz-placeholder {
     color: transparent;
+    
 }
 
 /* FF 4-18 */
@@ -941,19 +942,88 @@ input:focus:-ms-input-placeholder {
     font-size: 14px;
 }
 
-.product__slider {
+// slider
+//>>>>>>>>
+.product__slider-wrapper{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #F7F7F7;
+    align-items: center;
+    width: auto;
+    height: auto;
 }
 
-.slider_photo {
-    max-width: 777px;
+.product__slider {
+	display: flex;
+	justify-content: center;
+	background-color: #F7F7F7;
+	position: relative;
+	height: 800px;
 }
 
-.slider_photo img {
-    width: 100%;
+.slider_photos {
+	position: absolute;
+	max-width: 100%;
+	height: 100%;
 }
+
+.slider_item{
+	width: 100%;
+	z-index: 1;
+}
+
+
+.slider__button{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 47px;
+    background-color: #a4a4a454;
+}
+
+.slider__button-left{
+	left: 0;
+	cursor: pointer;
+    padding-right: 5px;
+    user-select:none
+}
+.slider__button-right{
+	right: 0;
+	cursor: pointer;
+    padding-left: 5px;
+    user-select:none
+}
+
+.slider__button svg{
+width: 12px;
+height: 21px;
+
+transition: fill .1s linear;
+}
+
+.slider__button:hover{
+    & svg {
+        fill: $red;
+    }
+}
+
+
+// .product__slider {
+//     display: flex;
+//     justify-content: center;
+//     background-color: #F7F7F7;
+// }
+
+// .slider_photo {
+//     max-width: 777px;
+// }
+
+
 
 
 .product__wrapper {
